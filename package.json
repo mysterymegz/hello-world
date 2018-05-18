@@ -4,3 +4,7 @@
   "description": "testbot",
   "main": "bot.js",
   "author": "mysterymegz",
+  "dependencies":,
+    "discord.js": "^11.3.2"
+}
+}
