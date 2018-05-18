@@ -1,0 +1,10 @@
+{
+  "name": "mysterymegzbot"
+  "version": "1.0.0",
+  "description": "mysterymegzbot",
+  "main": "bot.js",
+  "author": "mysterymegz",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
