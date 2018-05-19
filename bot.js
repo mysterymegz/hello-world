@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const prefix = config.prefix;
 
 client.on('ready', () => {
-  console.log(`Loffed in as $client.user.tag}`);
+  console.log(`Logged in as ${client.user.tag}`);
   client.user.setActivity(config.defaultActivity);
 });
 
