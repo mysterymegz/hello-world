@@ -26,11 +26,7 @@ client.on('message', msg => {
    
   else if (command === 'eat') {
       msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
-  }
-  
-  else if (command === 'eat') {
-      msg.channel.send("", {"https://m.popkey.co/f1c207/V0J6a.gif"});
-    
+     
   } else {
       return;
   }
