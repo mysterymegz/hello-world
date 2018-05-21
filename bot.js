@@ -20,8 +20,8 @@ client.on('message', msg => {
       msg.channel.send('Pong!');
   }
   
-  else if (command === 'cry' ) {
-      msg.channel.send('no cry');
+  else if (command === 'headache' ) {
+      msg.channel.send('Drink water');
   } 
    
   else if (command === 'eat') {
