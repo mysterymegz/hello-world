@@ -19,8 +19,12 @@ client.on('message', msg => {
   
   if (command === 'ping') {
       msg.channel.send('Pong!');
-  } 
-   
+  }  
+  
+  else if (command === 'hi') {
+      msg.channel.send("", {file: random.select('hello')});
+  }
+  
   else if (command === 'eat') {
       msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
   }
