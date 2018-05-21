@@ -22,6 +22,11 @@ client.on('message', msg => {
   
   else if (command === 'cry' ) {
       msg.channel.send('no cry');
+  }
+  
+  else if (command === '@mysterymegz' ) {
+      msg.channel.send('swimming with the fish');
+  }
   
   } else {
       return;
