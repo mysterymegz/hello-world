@@ -22,7 +22,11 @@ client.on('message', msg => {
   
   else if (command === 'cry' ) {
       msg.channel.send('no cry');
-    
+  } 
+   
+  else if (command === 'eat') {
+      msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
+  }   
   } else {
       return;
   }
