@@ -19,7 +19,12 @@ client.on('message', msg => {
   
   if (command === 'ping') {
       msg.channel.send('Pong!');
-  }  
+  }
+    
+  if (command === 'help') {
+      msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
+
+   }  
   
   else if (command === 'hi') {
       msg.channel.send("", {file: random.select('hello')});
