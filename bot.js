@@ -31,6 +31,10 @@ client.on('message', msg => {
   
   else if (command === 'slap') {
       msg.channel.send("", {file:"https://media.giphy.com/media/Zau0yrl17uzdK/giphy.gif"});
+  }
+  
+  else if (command === 'hug') {
+      msg.channel.send("", {file: random.select('hugs')});
     
   } else {
       return;
