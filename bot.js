@@ -26,7 +26,11 @@ client.on('message', msg => {
    
   else if (command === 'eat') {
       msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
-     
+  }
+  
+  else if (command === 'slap') {
+      msg.channel.send("", {file:"https://tenor.com/view/anime-tsundere-slap-gif-7679403"});
+    
   } else {
       return;
   }
