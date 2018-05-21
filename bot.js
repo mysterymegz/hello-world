@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
+const random = require('./random.js');
 
 const client = new Discord.Client();
 const prefix = config.prefix;
