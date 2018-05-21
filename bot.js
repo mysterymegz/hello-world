@@ -25,6 +25,10 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('hello')});
   }
   
+  else if (command === 'highfive') {
+      msg.channel.send("", {file: random.select('highfive')});
+  } 
+    
   else if (command === 'eat') {
       msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
   }
