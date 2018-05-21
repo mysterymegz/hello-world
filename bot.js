@@ -38,7 +38,7 @@ client.on('message', msg => {
   }  
 
   else if (command === 'pat') {
-      msg.channel.send("", (file: random.select('head pat')});
+      msg.channel.send("", (file: random.select('pet')});
     
   } else {
       return;
