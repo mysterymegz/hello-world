@@ -25,6 +25,10 @@ client.on('message', msg => {
       msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
   }
   
+  else if(command === 'bed') {
+      msg.channel.send("", {file: random.select('bed')});
+  }
+  
   else if (command === 'slap') {
       msg.channel.send("", {file: random.select('slaps')});
   }
