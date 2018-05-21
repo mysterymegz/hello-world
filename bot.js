@@ -35,7 +35,11 @@ client.on('message', msg => {
   
   else if (command === 'facedesk') {
       msg.channel.send("", {file: random.select('facedesk')});
+  }  
 
+  else if (command === 'pat') {
+      msg.channel.send("", (file: random.select('head pat')});
+    
   } else {
       return;
   }
