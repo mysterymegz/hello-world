@@ -19,11 +19,6 @@ client.on('message', msg => {
   
   if (command === 'ping') {
       msg.channel.send('Pong!');
-  }
-  
-  else if (command === 'headache' ) {
-      msg.channel.send('Drink water');
-      
   } 
    
   else if (command === 'eat') {
