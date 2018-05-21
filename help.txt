@@ -1,7 +1,0 @@
-Some info when you ask for help
-Owner-
-mysterymegz
-Prefix-
->
-Commands-
-ping,help,slap,eat,facedesk,hug
