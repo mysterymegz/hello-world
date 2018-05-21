@@ -22,7 +22,7 @@ client.on('message', msg => {
   
   else if (command === 'headache' ) {
       msg.channel.send('Drink water');
-      msg.channel.send('Sleep');
+      
   } 
    
   else if (command === 'eat') {
