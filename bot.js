@@ -34,7 +34,7 @@ client.on('message', msg => {
   }
   
   else if (command === 'hug') {
-      msg.channel.send("", {file:random.select('hugs')});
+      msg.channel.send("", {file: random.select('hugs')});
     
   } else {
       return;
