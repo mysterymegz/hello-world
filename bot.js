@@ -18,6 +18,11 @@ client.on('message', msg => {
   
   if (command === 'ping') {
       msg.channel.send('Pong!');
+  }
+  
+  else if (command === 'cry' ) {
+      msg.channel.send('no cry');
+  
   } else {
       return;
   }
