@@ -50,17 +50,16 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('hugs')});
   }
   
+  else if (command === 'hide') {     
+     msg.channel.send("", {file: random.select('hide)});
+  
   else if (command === 'facedesk') {
       msg.channel.send("", {file: random.select('facedesk')});
   }  
 
   else if (command === 'pat') {
       msg.channel.send("", {file: random.select('pet')});
-  }
-   
-  else if (command === 'hide') {
-      msg.channel.send("", {file: random.select('hide)});
-                                                
+                                                 
   } else {
       return;
   }
