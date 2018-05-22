@@ -51,7 +51,7 @@ client.on('message', msg => {
   }
   
   else if (command === 'hide') {     
-     msg.channel.send("", {file: random.select('hide)});
+     msg.channel.send("", {file: random.select('hide')});
   
   else if (command === 'facedesk') {
       msg.channel.send("", {file: random.select('facedesk')});
