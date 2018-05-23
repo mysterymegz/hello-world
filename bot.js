@@ -40,10 +40,7 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('hello')});
   }
   
-  else if (command ==='8ball') {
-      msg.channel.send("", {file: random.select('8ball')});
-  }
-  
+ 
   else if (command === 'highfive') {
       msg.channel.send("", {file: random.select('highfive')});
   } 
