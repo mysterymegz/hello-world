@@ -20,7 +20,17 @@ client.on('message', msg => {
   if (command === 'ping') {
       msg.channel.send('Pong!');
   }
-    
+   
+  else if (command ==='info') {
+      var info =new Discord.RichEmbed()
+      .setTitle('Bot Commands')
+      .addField('Owner', 'mysterymegz')
+      .addField('Prefix', '$')
+      .addField('Commands', 'hug,slap,facedesk,ping,hug,eat,bed,pat')
+      .setcolor(0x3958D0);
+      msg.channel.sendEmbed(info);
+  }
+  
   if (command === 'help') {
       msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
 
