@@ -1,8 +1,8 @@
 } else if (command === 'info') {
         var info = new Discord.RichEmbed()
-        .setTitle('EMBEDTITLE ')
-        .addField('Owner', 'NAME')
-        .addField('Prefix', 'NAME')
-        .addField('Commands', 'LIST')
-        .setColor(0xEE7600);
+        .setTitle('Bot Commands')
+        .addField('Owner', 'mystermegz')
+        .addField('Prefix', '$')
+        .addField('Commands', 'hug,slap,facedesk,ping,hug,eat,bed,pat')
+        .setColor(0x3958D0);
         msg.channel.sendEmbed(info);
