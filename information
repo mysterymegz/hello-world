@@ -1,0 +1,8 @@
+} else if (command === 'info') {
+        var info = new Discord.RichEmbed()
+        .setTitle('EMBEDTITLE ')
+        .addField('Owner', 'NAME')
+        .addField('Prefix', 'NAME')
+        .addField('Commands', 'LIST')
+        .setColor(0xEE7600);
+        msg.channel.sendEmbed(info);
