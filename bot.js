@@ -26,7 +26,7 @@ client.on('message', msg => {
       .setTitle('Bot Commands ')
       .addField('Owner', 'mysterymegz')
       .addField('Prefix', '$')
-      .addField('Commands', 'hug,slap,facedesk,ping,hug,eat,bed,pat,8ball')
+      .addField('Commands', 'hug,slap,facedesk,ping,hug,eat,bed,pat,dance')
       .setColor(0x3958D0);
       msg.channel.sendEmbed(info);
   }
@@ -40,7 +40,10 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('hello')});
   }
   
- 
+  else if (command === 'dance') {
+      msg.channel.send("", {file: random.select('dance')});
+  }
+  
   else if (command === 'highfive') {
       msg.channel.send("", {file: random.select('highfive')});
   } 
