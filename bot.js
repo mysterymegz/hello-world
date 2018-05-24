@@ -60,6 +60,10 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('slaps')});
   }
   
+  else if (command === 'swat') {
+      msg.channel.send("", {file: random.select('newspapers')});
+  }
+  
   else if (command === 'hug') {
       msg.channel.send("", {file: random.select('hugs')});
   }
