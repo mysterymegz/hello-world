@@ -37,15 +37,15 @@ client.on('message', msg => {
    }  
   
   else if (command === 'hi') {
-      msg.channel.send("", {file: random.select('./textfile/hello';
+      msg.channel.send("", {file: random.select('./textfile/hello')});
   }
   
   else if (command === 'dance') {
-      msg.channel.send("", {file: random.select('./textfile/dance';
+      msg.channel.send("", {file: random.select('./textfile/dance')});
   }
   
   else if (command === 'highfive') {
-      msg.channel.send("", {file: random.select('./textfile/'highfive';
+      msg.channel.send("", {file: random.select('./textfile/'highfive)})';
   } 
     
   else if (command === 'eat') {
@@ -53,31 +53,31 @@ client.on('message', msg => {
   }
   
   else if(command === 'bed') {
-      msg.channel.send("", {file: random.select('./textfile/'bed';
+      msg.channel.send("", {file: random.select('./textfile/'bed')});
   }
   
   else if (command === 'slap') {
-      msg.channel.send("", {file: random.select('./textfile/'slaps';
+      msg.channel.send("", {file: random.select('./textfile/'slaps')});
   }
   
   else if (command === 'swat') {
-      msg.channel.send("", {file: random.select('./textfile/'newspaper';
+      msg.channel.send("", {file: random.select('./textfile/'newspaper)})';
   }
   
   else if (command === 'hug') {
-      msg.channel.send("", {file: random.select('./textfile/'hugs';
+      msg.channel.send("", {file: random.select('./textfile/'hugs')});
   }
   
   else if (command === 'hide') {     
-     msg.channel.send("", {file: random.select('./textfile/'hide';
+     msg.channel.send("", {file: random.select('./textfile/'hide')});
   }
   
   else if (command === 'facedesk') {
-      msg.channel.send("", {file: random.select('./textfile/'facedesk';
+      msg.channel.send("", {file: random.select('./textfile/'facedesk')});
   }  
 
   else if (command === 'pat') {
-      msg.channel.send("", {file: random.select('./textfile/'pet';
+      msg.channel.send("", {file: random.select('./textfile/'pet')});
                                                  
   } else {
       return;
