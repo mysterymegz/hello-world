@@ -45,7 +45,7 @@ client.on('message', msg => {
   }
   
   else if (command === 'highfive') {
-      msg.channel.send("", {file: random.select('./textfile/highfive)});
+      msg.channel.send("", {file: random.select('./textfile/highfive')});
   } 
     
   else if (command === 'eat') {
