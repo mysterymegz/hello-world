@@ -37,15 +37,15 @@ client.on('message', msg => {
    }  
   
   else if (command === 'hi') {
-      msg.channel.send("", {file: random.select('hello')});
+      msg.channel.send("", {file: random.select('./textfile/hello';
   }
   
   else if (command === 'dance') {
-      msg.channel.send("", {file: random.select('dance')});
+      msg.channel.send("", {file: random.select('./textfile/dance';
   }
   
   else if (command === 'highfive') {
-      msg.channel.send("", {file: random.select('highfive')});
+      msg.channel.send("", {file: random.select('./textfile/'highfive';
   } 
     
   else if (command === 'eat') {
@@ -53,31 +53,31 @@ client.on('message', msg => {
   }
   
   else if(command === 'bed') {
-      msg.channel.send("", {file: random.select('bed')});
+      msg.channel.send("", {file: random.select('./textfile/'bed';
   }
   
   else if (command === 'slap') {
-      msg.channel.send("", {file: random.select('slaps')});
+      msg.channel.send("", {file: random.select('./textfile/'slaps';
   }
   
   else if (command === 'swat') {
-      msg.channel.send("", {file: random.select('newspaper')});
+      msg.channel.send("", {file: random.select('./textfile/'newspaper';
   }
   
   else if (command === 'hug') {
-      msg.channel.send("", {file: random.select('hugs')});
+      msg.channel.send("", {file: random.select('./textfile/'hugs';
   }
   
   else if (command === 'hide') {     
-     msg.channel.send("", {file: random.select('hide')});
+     msg.channel.send("", {file: random.select('./textfile/'hide';
   }
   
   else if (command === 'facedesk') {
-      msg.channel.send("", {file: random.select('facedesk')});
+      msg.channel.send("", {file: random.select('./textfile/'facedesk';
   }  
 
   else if (command === 'pat') {
-      msg.channel.send("", {file: random.select('pet')});
+      msg.channel.send("", {file: random.select('./textfile/'pet';
                                                  
   } else {
       return;
