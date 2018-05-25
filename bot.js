@@ -61,7 +61,7 @@ client.on('message', msg => {
   }
   
   else if (command === 'swat') {
-      msg.channel.send("", {file: random.select('./textfile/newspaper)})';
+      msg.channel.send("", {file: random.select('./textfile/newspaper')});
   }
   
   else if (command === 'hug') {
