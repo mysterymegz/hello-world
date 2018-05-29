@@ -75,7 +75,11 @@ client.on('message', msg => {
   else if (command === 'facedesk') {
       msg.channel.send("", {file: random.select('./textfile/facedesk')});
   }  
-
+  
+ else if (command === "8ball") {
+      msg.channel.sendMessage(doMagic8BallVoodoo())
+ }
+  
   else if (command === 'pat') {
       msg.channel.send("", {file: random.select('./textfile/pet')});
                                                  
