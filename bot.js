@@ -42,10 +42,14 @@ client.on('message', msg => {
       msg.channel.send(random.select('./textfile/8ball'));
   }
 }
-  
+ 
   else if (command === 'hi') {
+     if (typeof args[0] === 'undefined') {
+      msg.channel.send('You need to tag someone')
+  } else {     
       msg.channel.send("", {file: random.select('./textfile/hello')});
   }
+}
   
   else if (command === 'dance') {
       msg.channel.send("", {file: random.select('./textfile/dance')});
