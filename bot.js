@@ -29,12 +29,16 @@ client.on('message', msg => {
       .addField('Commands', 'slap, facedesk, ping, hug, eat, bed, pat, dance, highfive, hi, swat, hide')
       .setColor(0x3958D0);
       msg.channel.sendEmbed(info);
-  }
+  } 
   
   if (command === 'help') {
       msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
   }
-     
+  
+  else if (command === '8ball') {
+      msg.channel.send(random.select('./textfile/8ball');
+  }
+  
   else if (command === 'hi') {
       msg.channel.send("", {file: random.select('./textfile/hello')});
   }
