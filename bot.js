@@ -42,11 +42,7 @@ client.on('message', msg => {
   else if (command === 'dance') {
       msg.channel.send("", {file: random.select('./textfile/dance')});
   }
-  
-   else if (command === '8ball') {
-      msg.channel.send(random.select('./textfile/8ball')});
-  }
-  
+   
   else if (command === 'highfive') {
       msg.channel.send("", {file: random.select('./textfile/highfive')});
   } 
