@@ -44,7 +44,7 @@ client.on('message', msg => {
   }
   
    else if (command === '8ball') {
-      msg.channel.send(random.select('./textfile/8ball');
+      msg.channel.send(random.select('./textfile/8ball')});
   }
   
   else if (command === 'highfive') {
