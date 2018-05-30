@@ -36,8 +36,12 @@ client.on('message', msg => {
   }
  
   else if (command === '8ball') {
+     if (typeof args[0] === 'undefined') {
+      msg.channel.send('You need to ask a question!')
+  } else {
       msg.channel.send(random.select('./textfile/8ball'));
   }
+}
   
   else if (command === 'hi') {
       msg.channel.send("", {file: random.select('./textfile/hello')});
