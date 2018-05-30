@@ -42,7 +42,6 @@ client.on('message', msg => {
       msg.channel.send(random.select('./textfile/8ball'));
   }
 }
- 
   else if (command === 'hi') {
      if (typeof args[0] === 'undefined') {
       msg.channel.send('You need to tag someone')
@@ -50,79 +49,69 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('./textfile/hello')});
   }
 }
-  
   else if (command === 'dance') {
      if (typeof args[0] === 'undefined') {
       msg.channel.send('You need to tag someone')
   }else {
       msg.channel.send("", {file: random.select('./textfile/dance')});
   }
-} 
-  
+}   
   else if (command === 'highfive') {
      if (typeof args[0] === 'undefined') {
       msg.channel.send('You need to tag someone')
   }else { 
       msg.channel.send("", {file: random.select('./textfile/highfive')});
   } 
-} 
-  
+}  
   else if (command === 'eat') {
      if (typeof args[0] === 'underfined') {
       msg,channel.send('You need to tag someone')
   }else{      
       msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
   }
-}
-  
+}  
   else if(command === 'bed') {
      if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
   }else{      
       msg.channel.send("", {file: random.select('./textfile/bed')});
   }
-}
-    
+}    
   else if (command === 'slap') {
      if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
   }else{  
       msg.channel.send("", {file: random.select('./textfile/slaps')});
   }
-}
-    
+}    
   else if (command === 'swat') {
       if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
   }else{
       msg.channel.send("", {file: random.select('./textfile/newspaper')});
   }
-}
-    
+}    
   else if (command === 'hug') {
       if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
   }else{
       msg.channel.send("", {file: random.select('./textfile/hugs')});
   }
-}
-    
+}   
   else if (command === 'hide') {
      if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
   }else{
      msg.channel.send("", {file: random.select('./textfile/hide')});
   }
-}
-    
+}   
   else if (command === 'facedesk') {
      if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
   }else{
       msg.channel.send("", {file: random.select('./textfile/facedesk')});
   }
-}
-    
+}   
   else if (command === 'pat') {
      if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') {
