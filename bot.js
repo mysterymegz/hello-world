@@ -77,7 +77,7 @@ client.on('message', msg => {
   
   else if(command === 'bed') {
      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{      
       msg.channel.send("", {file: random.select('./textfile/bed')});
   }
@@ -85,7 +85,7 @@ client.on('message', msg => {
     
   else if (command === 'slap') {
      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{  
       msg.channel.send("", {file: random.select('./textfile/slaps')});
   }
@@ -93,7 +93,7 @@ client.on('message', msg => {
     
   else if (command === 'swat') {
       if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{
       msg.channel.send("", {file: random.select('./textfile/newspaper')});
   }
@@ -101,7 +101,7 @@ client.on('message', msg => {
     
   else if (command === 'hug') {
       if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{
       msg.channel.send("", {file: random.select('./textfile/hugs')});
   }
@@ -109,7 +109,7 @@ client.on('message', msg => {
     
   else if (command === 'hide') {
      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{
      msg.channel.send("", {file: random.select('./textfile/hide')});
   }
@@ -117,7 +117,7 @@ client.on('message', msg => {
     
   else if (command === 'facedesk') {
      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{
       msg.channel.send("", {file: random.select('./textfile/facedesk')});
   }
@@ -125,7 +125,7 @@ client.on('message', msg => {
     
   else if (command === 'pat') {
      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') {
+      msg.channel.send('You need to tag someone') 
   }else{
       msg.channel.send("", {file: random.select('./textfile/pet')});
   }
