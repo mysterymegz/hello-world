@@ -33,8 +33,8 @@ client.on('message', msg => {
   
   if (command === 'help') {
       msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
-
-   }  
+  }
+  
   else if (comannd === '8ball') {
       msg.channel.send("", {file: random.select('./textfile/8ball')});
   }
