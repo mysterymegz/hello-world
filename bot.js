@@ -129,7 +129,8 @@ client.on('message', msg => {
   }else{
       msg.channel.send("", {file: random.select('./textfile/pet')});
   }
- 
+}
+    
   } else {
       return;
   }
