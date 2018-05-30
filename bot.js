@@ -77,7 +77,11 @@ client.on('message', msg => {
     
   else if (command === 'pat') {
       msg.channel.send("", {file: random.select('./textfile/pet')});
-                                                 
+  }
+  
+  else if (command === '8ball') {
+      msg.channel.send(random.select('./textfile/8ball');
+  
   } else {
       return;
   }
