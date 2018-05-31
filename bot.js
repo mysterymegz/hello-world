@@ -122,7 +122,15 @@ client.on('message', msg => {
       msg.channel.send("", {file: random.select('./textfile/facedesk')});
   }
 }
-    
+ 
+   else if (command === 'poke') {
+      if (typeof args[0] === 'undefinded') {
+      msg.channel.send('You need to tag someone') 
+  }else{
+      msg.channel.send("", {file: random.select('./textfile/poke')});
+ }
+}   
+  
   else if (command === 'pat') {
      if (typeof args[0] === 'undefinded') {
       msg.channel.send('You need to tag someone') 
