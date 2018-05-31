@@ -6,141 +6,141 @@ const client = new Discord.Client();
 const prefix = config.prefix;
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}`);
-  client.user.setActivity(config.defaultActivity);
+	console.log(`Logged in as ${client.user.tag}`);
+	client.user.setActivity(config.defaultActivity);
 });
 
 client.on('message', msg => {
-  if (msg.author.bot) return;
-  if (msg.content.indexOf(config.prefix) !==0) return;
+	if (msg.author.bot) return;
+	if (msg.content.indexOf(config.prefix) !==0) return;
   
-  const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
+	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
+	const command = args.shift().toLowerCase();
   
-  if (command === 'ping') {
-      msg.channel.send('Pong!');
-  }
+	if (command === 'ping') {
+		msg.channel.send('Pong!');
+	}
    
-  else if (command ==='info') {
-      var info = new Discord.RichEmbed()
-      .setTitle('Bot Commands ')
-      .addField('Owner', 'mysterymegz')
-      .addField('Prefix', '$')
-      .addField('Commands', 'slap, facedesk, ping, hug, eat, bed, pat, poke, dance, highfive, hi, swat, hide, 8ball')
-      .setColor(0x3958D0);
-      msg.channel.sendEmbed(info);
-  } 
+	else if (command ==='info') {
+		var info = new Discord.RichEmbed()
+		.setTitle('Bot Commands ')
+		.addField('Owner', 'mysterymegz')
+		.addField('Prefix', '$')
+		.addField('Commands', 'slap, facedesk, ping, hug, eat, bed, pat, poke, dance, highfive, hi, swat, hide, 8ball')
+		.setColor(0x3958D0);
+		msg.channel.sendEmbed(info);
+	} 
   
-  if (command === 'help') {
-      msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
-  }
+	else if (command === 'help') {
+		msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
+	}
  
-  else if (command === '8ball') {
-     if (typeof args[0] === 'undefined') {
-      msg.channel.send('You need to ask a question!')
-  } else {
-      msg.channel.send(random.select('./textfile/8ball'));
-  }
-}
+	else if (command === '8ball') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to ask a question!')
+		} else {
+			msg.channel.send(random.select('./textfile/8ball'));
+		}
+	}
   
-  else if (command === 'hi') {
-     if (typeof args[0] === 'undefined') {
-      msg.channel.send('You need to tag someone')
-  } else {     
-      msg.channel.send("", {file: random.select('./textfile/hello')});
-  }
-}
+	else if (command === 'hi') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone')
+		} else {     
+			msg.channel.send("", {file: random.select('./textfile/hello')});
+		}
+	}
   
-  else if (command === 'dance') {
-     if (typeof args[0] === 'undefined') {
-      msg.channel.send('You need to tag someone')
-  }else {
-      msg.channel.send("", {file: random.select('./textfile/dance')});
-  }
-} 
+	else if (command === 'dance') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone')
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/dance')});
+		}
+	}	 
   
-  else if (command === 'highfive') {
-     if (typeof args[0] === 'undefined') {
-      msg.channel.send('You need to tag someone')
-  }else { 
-      msg.channel.send("", {file: random.select('./textfile/highfive')});
-  } 
-}  
+	else if (command === 'highfive') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone')
+		} else { 
+			msg.channel.send("", {file: random.select('./textfile/highfive')});
+		} 
+	}  
   
-  else if (command === 'eat') {
-     if (typeof args[0] === 'underfined') {
-      msg,channel.send('You need to tag someone')
-  }else{      
-      msg.channel.send("", {file: random.select('./textfile/eat')});
-  }
-}  
+	else if (command === 'eat') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone')
+		} else {      
+			msg.channel.send("", {file: random.select('./textfile/eat')});
+		}
+	}  
   
-  else if(command === 'bed') {
-     if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{      
-      msg.channel.send("", {file: random.select('./textfile/bed')});
-  }
-} 
+	else if (command === 'bed') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {      
+			msg.channel.send("", {file: random.select('./textfile/bed')});
+		}
+	}
     
-  else if (command === 'slap') {
-     if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{  
-      msg.channel.send("", {file: random.select('./textfile/slaps')});
-  }
-}
+	else if (command === 'slap') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {  
+			msg.channel.send("", {file: random.select('./textfile/slaps')});
+		}
+	}
     
-  else if (command === 'swat') {
-      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{
-      msg.channel.send("", {file: random.select('./textfile/newspaper')});
-  }
-} 
+	else if (command === 'swat') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/newspaper')});
+		}
+	} 
     
-  else if (command === 'hug') {
-      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{
-      msg.channel.send("", {file: random.select('./textfile/hugs')});
-  }
-} 
+	else if (command === 'hug') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/hugs')});
+		}
+	} 
     
-  else if (command === 'hide') {
-     if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{
-     msg.channel.send("", {file: random.select('./textfile/hide')});
-  }
-} 
+	else if (command === 'hide') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/hide')});
+		}
+	} 
     
-  else if (command === 'facedesk') {
-     if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{
-      msg.channel.send("", {file: random.select('./textfile/facedesk')});
-  }
-}
+	else if (command === 'facedesk') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/facedesk')});
+		}
+	}
  
-   else if (command === 'poke') {
-      if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{
-      msg.channel.send("", {file: random.select('./textfile/poke')});
- }
-}   
+	else if (command === 'poke') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/poke')});
+		}
+	}   
   
-  else if (command === 'pat') {
-     if (typeof args[0] === 'undefinded') {
-      msg.channel.send('You need to tag someone') 
-  }else{
-      msg.channel.send("", {file: random.select('./textfile/pet')});
-  }
+	else if (command === 'pat') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/pet')});
+		}
     
-  } else {
-      return;
-  }
+	} else {
+		return;
+	}
 });
 
 client.login(process.env.token);
