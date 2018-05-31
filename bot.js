@@ -71,7 +71,7 @@ client.on('message', msg => {
      if (typeof args[0] === 'underfined') {
       msg,channel.send('You need to tag someone')
   }else{      
-      msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
+      msg.channel.send("", {file: random.select('./textfile/eat')});
   }
 }  
   
