@@ -67,11 +67,8 @@ client.on('message', msg => {
 		} 
 	}  
   
-	else if (command === 'eat') {
-		if (typeof args[0] === 'undefined') {
-			msg.channel.send('You need to tag someone')
-		} else {      
-			msg.channel.send("", {file: random.select('./textfile/eat')});
+	else if (command === 'eat') {  
+	       msg.channel.send("", {file: random.select('./textfile/eat')});
 		}
 	}  
   
