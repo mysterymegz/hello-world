@@ -26,7 +26,7 @@ client.on('message', msg => {
 		.setTitle('Bot Commands ')
 		.addField('Owner', 'mysterymegz')
 		.addField('Prefix', '$')
-		.addField('Commands', 'slap, facedesk, ping, hug, eat, bed, pat, poke, dance, highfive, hi, swat, hide, 8ball')
+		.addField('Commands', 'slap, facedesk, ping, hug, bed, pat, poke, dance, highfive, hi, swat, hide, 8ball')
 		.setColor(0x3958D0);
 		msg.channel.sendEmbed(info);
 	} 
@@ -66,12 +66,7 @@ client.on('message', msg => {
 			msg.channel.send("", {file: random.select('./textfile/highfive')});
 		} 
 	}  
-  
-	else if (command === 'eat') {  
-	       msg.channel.send("", {file: random.select('./textfile/eat')});
-		}
-	}  
-  
+    
 	else if (command === 'bed') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send('You need to tag someone') 
