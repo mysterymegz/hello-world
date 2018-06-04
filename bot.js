@@ -137,6 +137,5 @@ client.on('message', msg => {
 	} else {
 		return;
 	}
-});
 
 client.login(process.env.token);
