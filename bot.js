@@ -36,7 +36,7 @@ client.on('message', msg => {
 	}
 		
 	else if (command === 'cold') {
-               msg.channel.send("", {file: random.select('./textfile/cold.txt'));
+               msg.channel.send("", {file: random.select('./textfile/cold.txt')});
         }
 
 	else if (command === '8ball') {
