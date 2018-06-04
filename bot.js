@@ -135,7 +135,8 @@ client.on('message', msg => {
 		}
     
 	} else {
-		return;
+	   return;
 	}
-
+});
+	
 client.login(process.env.token);
