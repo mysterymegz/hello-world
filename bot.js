@@ -35,8 +35,8 @@ client.on('message', msg => {
 		msg.channel.send('Owner: reno(すぐに私を殺す)#5340\nPrefix: $');
 	}
 		
-	else if (command ==='cold')
-               msg.channel.send("", {file: random.select('cold')});
+	else if (command ==='cold') {
+               msg.channel.send("", {file: random.select('./textfile/cold.txt'));
         }
 
 	else if (command === '8ball') {
