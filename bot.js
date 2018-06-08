@@ -18,7 +18,7 @@ client.on('message', msg => {
 	const command = args.shift().toLowerCase();
   
 	if (command === 'ping') {
-		msg.channel.send('Pong!');
+		msg.channel.send('Pong Ping Pong!');
 	}
    
 	else if (command ==='info') {
