@@ -39,12 +39,12 @@ client.on('message', msg => {
                msg.channel.send("", {file: random.select('./textfile/cold')});
         }
 	
-	else if (command === 'love') {
-		msg.channel.send("", {file: random.select('./textfile/love')});
-	}
-	
 	else if (command === 'pun') {
 		msg.channel.send("", {file: random.select('./textfile/puns')});
+	}
+	
+	else if (command === 'love') {
+		msg.channel.send("", {file: random.select('./textfile/love')});
 	}
 	
 	else if (command === '8ball') {
