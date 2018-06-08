@@ -39,6 +39,10 @@ client.on('message', msg => {
                msg.channel.send("", {file: random.select('./textfile/cold')});
         }
 	
+	else if (command === 'pun') {
+		msg.channel.send("", {file: random.select('./textfile/puns')});
+	}
+	
 	else if (command === 'love') {
 		msg.channel.send("", {file: random.select('./textfile/love')});
 	}
@@ -129,12 +133,8 @@ client.on('message', msg => {
 		} else {
 			msg.channel.send("", {file: random.select('./textfile/poke')});
 		}
-	}   
-	
-  	else if (command === 'puns') {
-		 msg.channel.send("", {file: random.select('./textfile/puns')});
 	}
-	  
+	
 	else if (command === 'pat') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send('You need to tag someone') 
