@@ -130,7 +130,11 @@ client.on('message', msg => {
 			msg.channel.send("", {file: random.select('./textfile/poke')});
 		}
 	}   
-  
+	
+  	else if (command === 'puns')
+		 msg.channel.send("", {file: random.select('./textfile/pun')});
+	}
+	  
 	else if (command === 'pat') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send('You need to tag someone') 
