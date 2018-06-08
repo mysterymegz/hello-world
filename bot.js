@@ -43,7 +43,6 @@ client.on('message', msg => {
 		msg.channel.send("", {file: random.select('./textfile/love')});
 	}
 	
-	
 	else if (command === 'pun') {
 		msg.channel.send("", {file: random.select('./textfile/puns')});
 	}
