@@ -132,7 +132,7 @@ client.on('message', msg => {
 	}   
 	
   	else if (command === 'puns')
-		 msg.channel.send("", {file: random.select('./textfile/pun')});
+		 msg.channel.send("", {file: random.select('./textfile/puns')});
 	}
 	  
 	else if (command === 'pat') {
