@@ -38,6 +38,10 @@ client.on('message', msg => {
 	else if (command === 'cold') {
                msg.channel.send("", {file: random.select('./textfile/cold')});
         }
+		
+	else if (command === 'foff') {
+               msg.channel.send("", {file: random.select('./textfile/foff')});
+	}
 	
 	else if (command === 'puns') {
 		msg.channel.send(random.select('./textfile/puns'));
@@ -101,10 +105,6 @@ client.on('message', msg => {
 		} else {
 			msg.channel.send("", {file: random.select('./textfile/newspaper')});
 		}
-	}
-	
-	else if (command === 'foff') {
-               msg.channel.send("", {file: random.select('./textfile/foff')});
 	}
 	
 	else if (command === 'hug') {
