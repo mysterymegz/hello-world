@@ -60,8 +60,7 @@ client.on('message', msg => {
 	}
   
 	else if (command === 'hi') {   
-		msg.channel.send("", {file: random.select('./textfile/hello')});
-		}
+		msg.channel.send("", {file: random.select('./textfile/hello')});	
 	}
   
 	else if (command === 'dance') {
