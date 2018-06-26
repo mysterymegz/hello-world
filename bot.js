@@ -19,7 +19,6 @@ Music.start(client, {
  
 client.login("token");
 
-});
 
 client.on('message', msg => {
 	if (msg.author.bot) return;
