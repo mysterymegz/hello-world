@@ -13,11 +13,12 @@ const Discord = require('discord.js');
 const Music = require('discord.js-musicbot-addon');
 const client = new Discord.Client();
  
-Music.start(client,{
-  youtubeKey: 'AIzaSyA2IUN7CZg1t5KZNqNETDME6kEoq801aiI'
+Music.start(client, {
+  youtubeKey:'AIzaSyA2IUN7CZg1t5KZNqNETDME6kEoq801aiI'
 });
  
 client.login("token");
+
 
 client.on('message', msg => {
 	if (msg.author.bot) return;
