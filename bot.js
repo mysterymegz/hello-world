@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
 const random = require('./random.js');
-
+const Music = require('discord.js-musicbot-addon');
 const client = new Discord.Client();
 const prefix = config.prefix;
 
@@ -9,9 +9,6 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}`);
 	client.user.setActivity(config.defaultActivity);
 });
-const Discord = require('discord.js');
-const Music = require('discord.js-musicbot-addon');
-const client = new Discord.Client();
  
 const music = new Music(client, {
   youtubeKey: 'AIzaSyA2IUN7CZg1t5KZNqNETDME6kEoq801aiI});'
