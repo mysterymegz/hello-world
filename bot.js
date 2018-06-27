@@ -11,7 +11,11 @@ client.on('ready', () => {
 });
  
 const music = new Music(client, {
-  youtubeKey: 'AIzaSyA2IUN7CZg1t5KZNqNETDME6kEoq801aiI});'
+    youtubeKey: AIzaSyA2IUN7CZg1t5KZNqNETDME6kEoq801aiI, //Youtube Dev API3 Key
+    prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', defVolume: 100, anyoneCanSkip: true, messageHelp: true,
+    botOwner: '327562984446623774', helpCmd: 'assist', playCmd: 'play',    skipCmd: 'skip', queueCmd: 'queue',
+    pauseCmd: 'pause', resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set',
+    loopCmd: 'loop', searchCmd: 'search', ownerCmd: 'owner', enableQueueStat: true});
 });
  
 client.login("token");
