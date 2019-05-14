@@ -36,7 +36,7 @@ client.on('message', msg => {
 		.setTitle('Bot Commands ')
 		.addField('Owner', 'mysterymegz')
 		.addField('Prefix', '$')
-		.addField('Commands', 'slap, facedesk, ping, hug, bed, pat, poke, dance, highfive, hi, swat, hide, 8ball, cold, love, dadpuns')
+		.addField('Commands', 'slap, spank facedesk, ping, hug, bed, pat, poke, dance, highfive, hi, swat, hide, 8ball, cold, love, dadpuns')
 		.setColor(0x3958D0);
 		msg.channel.sendEmbed(info);
 	} 
