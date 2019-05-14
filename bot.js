@@ -119,6 +119,14 @@ client.on('message', msg => {
 		} else {
 			msg.channel.send("", {file: random.select('./textfile/newspaper')});
 		}
+		
+	}	
+	else if (command === 'swat') {
+		if (typeof args[0] === 'undefined') {
+			msg.channel.send('You need to tag someone') 
+		} else {
+			msg.channel.send("", {file: random.select('./textfile/newspaper')});
+		}
 	}
 	
 	else if (command === 'hug') {
